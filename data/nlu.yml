@@ -1,0 +1,416 @@
+version: "3.1"
+nlu:
+- intent: saludar
+  examples: |
+    - Hola
+    - holi
+    - holaaaaa
+    - holii
+    - Holiiii
+    - Hola!!!!!
+    - Holaaaa!
+    - ¡Holaaaa!
+    - Holaaa
+    - Buenas
+    - Buenos días
+    - buenos díaaaaas
+    - buenos dias
+    - buenos diassss
+    - Buenas noches
+    - buenas noches
+    - buenas nocheeees
+    - Buenas noches!
+    - buenas nochessss
+    - buenas tardes
+    - ¿Qué hay?
+    - ¿Qué tal estás?
+    - Hola bot
+    - ¿Cómo puedes ayudarme?
+    - ¿Puedes ayudarme?
+    - Buenas tardes
+    - ¿Qué tal?
+    - qué tal
+    - qué hay
+    - buenas
+    - buenos dias
+
+
+- intent: decir_nombre
+  examples: |
+    - soy [Lucía](nombre_usuario)
+    - me llamo [Pedro](nombre_usuario)
+    - me llamo [Pepe](nombre_usuario)
+    - soy [Ana](nombre_usuario)
+    - [Carlos](nombre_usuario), mucho gusto
+    - soy [María](nombre_usuario)
+    - mi nombre es [Andrea](nombre_usuario)
+    - me llamo [Sofía](nombre_usuario)
+    - soy [Miriam](nombre_usuario)
+    - me llamo [Irene](nombre_usuario)
+    - me llamo [Álvaro](nombre_usuario)
+    - soy [Cristina](nombre_usuario)
+    - mi nombre es [Elena](nombre_usuario)
+    - mi nombre es [Andrés](nombre_usuario)
+    - Me llamo [Penélope](nombre_usuario)
+    - mi nombre es [Fran](nombre_usuario)
+    - Soy [alejandro](nombre_usuario)
+    - Soy [Claudia](nombre_usuario)
+    - mi nombre es [Adriana](nombre_usuario)
+    - Me llamo [Aitor](nombre_usuario), mucho gusto
+    - Mi nombre es [Paula](nombre_usuario)
+    - Mi nombre es [Raúl](nombre_usuario)
+    - Quiero presentarme, soy [Pablo](nombre_usuario)
+    - Oye, soy [Laura](nombre_usuario)
+    - [Juan](nombre_usuario), encantado
+    - Un gusto, soy [Miguel](nombre_usuario)
+    - me presento, [Jaime](nombre_usuario)
+    - mi nombre es [Lucas](nombre_usuario)
+    - soy [Sara](nombre_usuario)
+    - mi nombre es [Aitana](nombre_usuario)
+    - [Manuel](nombre_usuario)
+    - Me llamo [Irene](nombre_usuario)
+    - Soy [Alicia](nombre_usuario)
+    - mi nombre es [Felipe](nombre_usuario)
+    - mi nombre es [Roberto](nombre_usuario)
+    - me llamo [Carmen](nombre_usuario)
+    - soy [Mateo](nombre_usuario)
+    - soy [Laura](nombre_usuario)
+    - me llamo [Oscar](nombre_usuario)
+    - mi nombre es [Julia](nombre_usuario)
+    - mi nombre es [David](nombre_usuario)
+    - me llamo [Natalia](nombre_usuario)
+    - soy [Belén](nombre_usuario), encantada
+    - me llamo [Juan Pablo](nombre_usuario)
+    - soy [Daniela](nombre_usuario)
+    - mi nombre es [Carlos Alberto](nombre_usuario)
+    - me llamo [Marta](nombre_usuario)
+    - mucho gusto, soy [Jorge](nombre_usuario)
+    - me llamo [Alejandra](nombre_usuario)
+    - soy [Esteban](nombre_usuario)
+    - me llamo [Patricia](nombre_usuario), mucho gusto
+    - soy [Andrés](nombre_usuario), un placer conocerte
+    - mi nombre es [Rocío](nombre_usuario)
+    - me presento: soy [Nicolás](nombre_usuario)
+    - me llamo [Gema](nombre_usuario), encantada de hablar contigo
+    - soy [Ignacio](nombre_usuario), ¿podrías ayudarme?
+    - me llamo [Marisol](nombre_usuario)
+    - mi nombre es [Héctor](nombre_usuario), mucho gusto
+    - soy [Lucía](nombre_usuario), ¿tú cómo te llamas?
+    - mi nombre es [Antonio](nombre_usuario)
+    - Mi nombre es [Mar](nombre_usuario).
+    - Me llamo [Lucía](nombre_usuario)
+    - me llamo [lucia](nombre_usuario)
+
+
+- intent: preguntar_curiosidad
+  examples: |
+      - cuéntame una curiosidad
+      - cuenta algo curioso
+      - dime una curiosidad
+      - dime algo curioso
+      - dame un dato curioso
+      - ¿Qué curiosidad me puedes contar?
+      - quiero saber algo interesante
+      - me gustaría conocer una curiosidad
+      - por favor, dime algo interesante
+      - ¿tienes algún dato curioso?
+      - dato curioso
+      - datos curiosos
+      - datos interesantes
+      - información curiosa
+      - muéstrame alguna curiosidad
+      - enséñame algo curioso
+      - ¿puedes contarme un dato curioso?
+      - me encantaría oír una curiosidad
+      - sorpréndeme con una curiosidad
+      - háblame de algo curioso
+      - habla de algo curioso
+      - cuenta cosas curiosas
+      - ¿conoces alguna curiosidad?
+      - comparte conmigo una curiosidad
+      - dame un dato interesante
+      - cuéntame algo que no sepa
+      - dime algún hecho curioso
+      - ¿qué dato curioso tienes?
+      - cuéntame un hecho inusual
+      - cuéntame un hecho raro
+      - compárteme una curiosidad
+      - ¿tienes algo curioso para contar?
+      - dime algo que me sorprenda
+      - dame una anécdota curiosa
+      - cuéntame alguna anécdota interesante
+      - ¿me cuentas algo curioso?
+      - ¿puedes contarme algo interesante?
+      - me interesa saber algo curioso
+      - quiero escuchar una curiosidad
+      - podrías contarme un dato curioso
+      - comparte un dato curioso
+      - enséñame algo que no sepa
+      - ¿sabes algún dato curioso?
+      - cuéntame algo fuera de lo común
+      - sorpréndeme con un dato curioso
+      - dime un hecho interesante
+      - me encantaría escuchar una curiosidad
+      - muéstrame un hecho curioso
+      - ¿tienes alguna curiosidad para mí?
+      - háblame de algún dato curioso
+      - dame un hecho inusual
+      - cuéntame algo que me desconcierte
+      - dime alguna cosa curiosa
+      - ¿puedes compartir una curiosidad conmigo?
+      - comparte algún dato curioso
+      - cuéntame alguna cosa interesante
+      - me gustaría oír un dato curioso
+      - sorpréndeme con algo inesperado
+
+
+- intent: despedirse
+  examples: |
+    - Adiós
+    - adios
+    - adioss
+    - Adios
+    - adios!!!
+    - adios!
+    - Adiós!
+    - ¡Adios!
+    - Adioooooosssssss
+    - Adiosssssss
+    - adiosss
+    - adioooooos
+    - aaaadios
+    - ¡adios!
+    - ¡adiós!
+    - Chao
+    - Hasta luego
+    - Nos vemos
+    - Me voy
+    - chao chao
+    - hasta luegooooo
+    - hasta luego!
+    - Hasta luego!
+    - ¡Hasta luego!
+    - ¡hasta luego!
+    - Hasta pronto
+    - Me voy por ahora
+    - Hasta otra
+    - Hasta otro día
+    - Ciao
+    - Fue un gusto
+    - Luego seguimos
+    - Me despido
+    - Vuelvo luego
+    - Otro día seguimos
+    - Me voy a escuchar tus recomendaciones
+    - Ha sido genial, ¡nos vemos!
+    - adios
+    - Adioooooos
+    - Hasta más ver
+    - Me desconecto
+    - Un placer
+    - Vale, adios
+    - Vale, chao
+
+
+
+- intent: negar_agradecer
+  examples: |
+    - no
+    - No
+    - nooooo
+    - no!
+    - No!
+    - ¡no!
+    - ¡No!
+    - no, gracias
+    - no, muchas gracias
+    - no, mil gracias
+    - no gracias
+    - no, graciassssss
+    - no gracias, está bien
+    - no, muchas graciasssss
+    - no, gracias por todo
+    - no, ya estoy bien
+    - no, eso era todo
+    - eso era todo
+    - no, con eso es suficiente
+    - no, gracias, muy amable
+    - no, todo perfecto, gracias
+    - no, por ahora no
+    - no, ya tengo lo que necesito, gracias
+    - no, gracias igualmente
+    - no, gracias por la ayuda
+    - no, no necesito más
+    - no, de momento no
+    - no, eso es todo por hoy
+    - no, gracias, ya terminé
+    - no, gracias por las canciones
+    - no, ha sido suficiente
+    - no, me voy ya, gracias
+    - no, ha estado genial, gracias
+    - no, gracias por tu tiempo
+    - no, todo bien, gracias
+    - no, gracias por las recomendaciones
+    - no, ya está bien así
+    - no, muchas gracias por todo
+    - no, me despido, gracias
+    - no, ya tengo suficiente música, gracias
+    - te lo agradezco
+    - gracias por tu ayuda
+    - muchísimas gracias
+    - muchisimas gracias
+    - gracias por la recomendación
+    - se agradece
+    - te lo agradezco
+    - muy amable
+    - gracias, de verdad
+    - gracias por responder
+    - gracias por la música
+    - estoy agradecido
+    - estoy agradecida
+    - estoy muy agradecido
+    - estoy muy agradecida
+    - gracias bot
+    - genial, gracias
+    - gracias por todo
+    - graciassssssss
+    - qué bien, gracias
+    - que bien, gracias
+    - graciaaaaaaaas
+    - te doy las gracias
+    - gracias, era justo lo que buscaba
+    - qué majo, gracias
+    - gracias por tu tiempo
+    - eso era lo que necesitaba, gracias
+    - ¡gracias!
+    - gracias!!!!!
+    - Gracias!!
+    - Gracias!
+    - ¡Gracias!
+    - ¡muchas gracias!
+    - ¡Muchas gracias!
+    - ¡mil gracias!
+    - No, hasta luego
+    - no, adios
+    - no, adiós
+    - No, gracias, adios
+    - Nada más, hasta luego!
+    - eso es todo, adios
+    - eso es todo, gracias
+    - eso es todo 
+    - nada más
+    - no, gracias
+    - no, hasta pronto
+    - no
+    - No
+
+- intent: placeholder_detected_language
+  examples: |
+    - [placeholder](detected_language)
+
+- lookup: nombre_usuario
+  examples: |
+    - Lucía
+    - Pedro
+    - Ana
+    - Carlos
+    - María
+    - Andrea
+    - Sofía
+    - Irene
+    - Álvaro
+    - Claudia
+    - Alejandro
+    - Paula
+    - Ramón
+    - Guillermo
+    - Laura
+    - Miguel
+    - Jaime
+    - David
+    - Julia
+    - Gema
+    - Nicolás
+    - Gonzalo
+    - Isabel
+    - Mateo
+    - Aitana
+    - Sergio
+    - Carmen
+    - Marta
+    - Hugo
+    - Valeria
+    - Marcos
+    - Daniela
+    - Tomás
+    - Noelia
+    - Jorge
+    - Inés
+    - Pablo
+    - Belén
+    - Esteban
+    - Alejandra
+    - Patricia
+    - Héctor
+    - Marisol
+    - Antonio
+    - Mar
+    - Luis
+    - Adriana
+    - Aitor
+    - Nuria
+    - Fernando
+    - Carolina
+    - Manuela
+    - Rubén
+    - Teresa
+    - Joaquín
+    - Pilar
+    - Adela
+    - Kevin
+    - Ángeles
+    - Jesús
+    - Alba
+    - Leo
+    - Victoria
+    - Bruno
+    - Clara
+    - Marcos
+    - Alicia
+    - Iván
+    - Silvia
+    - Samuel
+    - Lorena
+    - Andrés
+    - Nerea
+    - Óscar
+    - Ricardo
+    - Francisco
+    - Vega
+    - Diego
+    - Celia
+    - Julián
+    - Ángel
+    - Ángela
+    - Raúl
+    - Enrique
+    - Rebeca
+    - Damián
+    - Sonia
+    - Israel
+    - Elsa
+    - Joaquín
+    - Yaiza
+    - Rodrigo
+    - Araceli
+    - Juan Pablo
+    - María José
+    - José Luis
+    - Ana Belén
+    - Carlos Alberto
+    - María del Mar
+    - Juan Carlos
+    - María Teresa
+    - Luis Miguel
+    - María Jesús
+    - María Teresa

@@ -1,0 +1,33 @@
+recipe: default.v1
+
+assistant_id: 20250406-125718-patient-energy
+
+language: es
+
+pipeline:
+  - name: "custom_components.language_detection_component.LanguageDetectionComponent"
+    fasttext_model_path: "/Users/luchi/Desktop/LEIA/PLN/RASA/prueba/models/fasttext/lid.176.ftz"
+  - name: SpacyNLP
+    model: es_core_news_md
+  - name: SpacyTokenizer
+  - name: SpacyFeaturizer
+  - name: RegexFeaturizer
+  - name: LexicalSyntacticFeaturizer
+  - name: CountVectorsFeaturizer
+  - name: DIETClassifier
+    epochs: 100
+  - name: EntitySynonymMapper
+  - name: ResponseSelector
+    epochs: 100
+  - name: FallbackClassifier
+    threshold: 0.1
+    ambiguity_threshold: 0.1
+
+policies:
+  - name: MemoizationPolicy
+    max_history: 3
+  - name: RulePolicy
+    core_fallback_threshold: 0.3
+  - name: TEDPolicy
+    max_history: 3
+    epochs: 100

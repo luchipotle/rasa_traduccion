@@ -1,0 +1,42 @@
+version: "3.1"
+
+intents:
+  - saludar
+  - decir_nombre
+  - despedirse
+  - preguntar_curiosidad
+  - negar_agradecer
+
+
+entities:
+  - nombre_usuario
+  - detected_language
+
+
+
+slots:
+  nombre_usuario:
+    type: text
+    influence_conversation: true
+    mappings:
+      - type: from_entity
+        entity: nombre_usuario
+  detected_language:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: detected_language
+
+
+
+actions:
+  - action_preguntar_nombre
+  - action_contar_curiosidad
+  - action_saludo_personalizado
+  - action_responder_agradecimiento
+  - action_despedida
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

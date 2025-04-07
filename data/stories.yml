@@ -1,0 +1,36 @@
+version: "3.1"
+stories:
+
+- story: saludo_sin_nombre
+  steps:
+    - intent: saludar
+    - action: action_preguntar_nombre
+
+- story: saludo_con_nombre
+  steps:
+    - intent: saludar
+    - action: action_preguntar_nombre
+    - intent: decir_nombre
+      entities:
+        - nombre_usuario
+    - slot_was_set:
+      - nombre_usuario: true
+    - action: action_saludo_personalizado
+
+- story: curiosidad_directa
+  steps:
+    - intent: preguntar_curiosidad
+    - action: action_contar_curiosidad
+
+- story: curiosidad_despues_saludo
+  steps:
+    - intent: saludar
+    - action: action_preguntar_nombre
+    - intent: decir_nombre
+      entities:
+        - nombre_usuario
+    - slot_was_set:
+      - nombre_usuario: true
+    - action: action_saludo_personalizado
+    - intent: preguntar_curiosidad
+    - action: action_contar_curiosidad
